@@ -1,0 +1,73 @@
+@mixin flex ($direction){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+
+
+*,*::after,*::before
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: $backgroundcolor;
+    height: 100vh;
+}
+
+
+.container
+{
+    height: 100vh;
+    padding: 1rem;
+    @include flex(row);
+    .one
+    {
+        width: 25%;
+        padding: 2rem;
+        margin: 1.5rem;
+        background-color: $cardBg;
+        border-radius: 1rem;
+        height: 50vh;
+        h1
+        {
+            background-color: $cardBg;
+            margin:1rem 0 1rem 0;
+        }
+        
+        p
+        {
+            margin:1rem 0 2rem 0;
+            line-height: 1.5rem;
+        }
+        a
+        {
+            margin-top: 1rem;
+            text-decoration: none;
+            padding: 0.5rem 2rem 0.5rem 2rem;
+            background-color: $buttoncolor;
+            color:$backgroundcolor;
+            border-radius: 0.3rem;
+            &:hover
+            {
+                background-color: #e4e5c6;
+            }
+        }
+
+
+    }
+    .two
+    {
+      @extend .one;
+    }
+
+    .three
+    {
+       @extend .one;
+    }
+}

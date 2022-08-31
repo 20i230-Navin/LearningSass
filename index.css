@@ -1,0 +1,82 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6E84B7;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.container .one, .container .three, .container .two {
+  width: 25%;
+  padding: 2rem;
+  margin: 1.5rem;
+  background-color: #B2C8DF;
+  border-radius: 1rem;
+  height: 50vh;
+}
+.container .one h1, .container .three h1, .container .two h1 {
+  background-color: #B2C8DF;
+  margin: 1rem 0 1rem 0;
+}
+.container .one p, .container .three p, .container .two p {
+  margin: 1rem 0 2rem 0;
+  line-height: 1.5rem;
+}
+.container .one a, .container .three a, .container .two a {
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: #F8F9D7;
+  color: #6E84B7;
+  border-radius: 0.3rem;
+}
+.container .one a:hover, .container .three a:hover, .container .two a:hover {
+  background-color: #e4e5c6;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .container .one, .container .two, .container .three {
+    width: 50%;
+    padding: 1rem;
+    margin: 1.5rem;
+    background-color: #B2C8DF;
+    border-radius: 1rem;
+    height: 50vh;
+  }
+  .container .one h1, .container .two h1, .container .three h1 {
+    background-color: #B2C8DF;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .container .one p, .container .two p, .container .three p {
+    margin: 0.5rem 0 1rem 0;
+    line-height: 1.5rem;
+  }
+  .container .one a, .container .two a, .container .three a {
+    margin-top: 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: #F8F9D7;
+    color: #6E84B7;
+    border-radius: 0.3rem;
+  }
+  .container .one a:hover, .container .two a:hover, .container .three a:hover {
+    background-color: #e4e5c6;
+  }
+}/*# sourceMappingURL=index.css.map */
