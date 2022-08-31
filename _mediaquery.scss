@@ -1,13 +1,21 @@
 @media only screen and (max-width: 1200px)
  {
+
+    body
+    {
+        background-color: $backgroundcolor;
+        height: 130vh;
+    }
+
     .container
     {
+        margin-top: 50%;
         @include flex(column);
         padding: 0.5rem;
-        .one
+    .one
     {
-        width: 50%;
-        padding: 1rem;
+        width: 70%;
+        padding: 1.5rem;
         margin: 1.5rem;
         background-color: $cardBg;
         border-radius: 1rem;

@@ -45,7 +45,12 @@ body {
   background-color: #e4e5c6;
 }
 @media only screen and (max-width: 1200px) {
+  body {
+    background-color: #6E84B7;
+    height: 130vh;
+  }
   .container {
+    margin-top: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,8 +58,8 @@ body {
     padding: 0.5rem;
   }
   .container .one, .container .two, .container .three {
-    width: 50%;
-    padding: 1rem;
+    width: 70%;
+    padding: 1.5rem;
     margin: 1.5rem;
     background-color: #B2C8DF;
     border-radius: 1rem;
